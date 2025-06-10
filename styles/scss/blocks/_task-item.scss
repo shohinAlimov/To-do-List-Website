@@ -1,0 +1,96 @@
+// ===============================================
+// TASK ITEM COMPONENT
+// ===============================================
+
+.task-item {
+  @include flex-center;
+  padding: $spacing-lg;
+  border-bottom: 1px solid $border-lighter;
+  @include transition(background-color);
+  animation: slideIn 0.3s ease;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: $bg-hover;
+  }
+
+  &--completed {
+    opacity: 0.7;
+
+    .task-item__text {
+      text-decoration: line-through;
+      color: $text-muted;
+    }
+  }
+
+  // Task Content Elements
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: $spacing-md;
+    cursor: pointer;
+    accent-color: $primary-color;
+  }
+
+  &__content {
+    flex: 1;
+    @include flex-center;
+  }
+
+  &__text {
+    font-size: $font-size-base;
+    color: $text-primary;
+    word-break: break-word;
+  }
+
+  &__input {
+    flex: 1;
+    padding: $spacing-xs;
+    border: 2px solid $primary-color;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-base;
+    outline: none;
+  }
+
+  &__date {
+    font-size: $font-size-xs;
+    color: $text-muted;
+    margin-left: $spacing-md;
+  }
+
+  // Task Actions
+  &__actions {
+    display: flex;
+    gap: $spacing-sm;
+    margin-left: $spacing-md;
+  }
+
+  &__btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-normal;
+    @include transition();
+
+    &--edit {
+      @include button-style($warning-color, $warning-hover);
+    }
+
+    &--delete {
+      @include button-style($danger-color, $danger-hover);
+    }
+
+    &--save {
+      @include button-style($success-color, $success-hover);
+    }
+
+    &--cancel {
+      @include button-style($gray-color, $gray-hover);
+    }
+  }
+}

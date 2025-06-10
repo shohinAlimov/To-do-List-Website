@@ -1,0 +1,22 @@
+// ===============================================
+// STATISTICS SECTION
+// ===============================================
+
+.stats {
+  @include flex-center-center;
+  gap: $spacing-xl;
+  margin-bottom: $spacing-lg;
+  @include card-style;
+  padding: $spacing-md;
+
+  &__item {
+    font-size: $font-size-sm;
+    color: $text-secondary;
+    font-weight: $font-weight-normal;
+
+    span {
+      color: $primary-color;
+      font-weight: $font-weight-bold;
+    }
+  }
+}

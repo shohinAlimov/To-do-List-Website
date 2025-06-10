@@ -1,0 +1,25 @@
+// ===============================================
+// EMPTY STATE COMPONENT
+// ===============================================
+
+.empty-state {
+  @include text-center;
+  padding: $spacing-xxl $spacing-lg;
+  @include card-style;
+
+  &__icon {
+    font-size: $font-size-huge;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__title {
+    font-size: $font-size-xl;
+    color: $text-primary;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__text {
+    color: $text-secondary;
+    font-size: $font-size-base;
+  }
+}

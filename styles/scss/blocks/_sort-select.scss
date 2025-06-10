@@ -1,0 +1,17 @@
+// ===============================================
+// SORT SELECT
+// ===============================================
+
+.sort-select {
+  padding: $spacing-xs 12px;
+  border: 2px solid $border-light;
+  border-radius: $border-radius-md;
+  background: $bg-white;
+  cursor: pointer;
+  font-size: $font-size-sm;
+  outline: none;
+
+  &:focus {
+    border-color: $primary-color;
+  }
+}

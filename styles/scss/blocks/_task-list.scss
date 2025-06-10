@@ -1,0 +1,9 @@
+// ===============================================
+// TASK LIST SECTION
+// ===============================================
+
+.task-list {
+  list-style: none;
+  @include card-style;
+  overflow: hidden;
+}

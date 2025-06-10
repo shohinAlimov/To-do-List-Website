@@ -1,0 +1,43 @@
+// ===============================================
+// MIXINS
+// ===============================================
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+}
+
+@mixin button-style($bg-color, $hover-color) {
+  background: $bg-color;
+  color: $text-white;
+
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+@mixin card-style {
+  background: $bg-white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+}
+
+@mixin text-center {
+  text-align: center;
+}

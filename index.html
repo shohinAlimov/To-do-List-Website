@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple To-Do List</title>
+  <link rel="stylesheet" href="./styles/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="header__title">My To-Do List</h1>
+      <p class="header__subtitle">Keep track of your tasks</p>
+    </header>
+
+    <!-- Add New Task -->
+    <div class="add-task">
+      <input type="text" class="add-task__input" placeholder="What do you need to do?" id="taskInput">
+      <button class="add-task__button" id="addBtn">Add Task</button>
+    </div>
+
+    <!-- Filter and Sort Controls -->
+    <div class="controls">
+      <div class="controls__filters">
+        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <div class="controls__sort">
+        <select class="sort-select" id="sortSelect">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="alphabetical">A-Z</option>
+          <option value="completed">Completed First</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Task Statistics -->
+    <div class="stats">
+      <span class="stats__item">
+        Total: <span id="totalTasks">0</span>
+      </span>
+      <span class="stats__item">
+        Pending: <span id="pendingTasks">0</span>
+      </span>
+      <span class="stats__item">
+        Completed: <span id="completedTasks">0</span>
+      </span>
+    </div>
+
+    <!-- Tasks List -->
+    <ul class="task-list" id="taskList">
+      <!-- Tasks will be added here by JavaScript -->
+    </ul>
+
+    <!-- Empty State -->
+    <div class="empty-state" id="emptyState">
+      <div class="empty-state__icon">📝</div>
+      <h3 class="empty-state__title">No tasks yet</h3>
+      <p class="empty-state__text">Add your first task above to get started!</p>
+    </div>
+  </div>
+
+  <!-- Load utility files first -->
+  <script src="/js/utils/storage.js"></script>
+  <script src="/js/utils/taskUtils.js"></script>
+
+  <!-- Load components -->
+  <script src="js/components/UIComponents.js"></script>
+  <script src="js/components/TaskManager.js"></script>
+
+  <!-- Load main app -->
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

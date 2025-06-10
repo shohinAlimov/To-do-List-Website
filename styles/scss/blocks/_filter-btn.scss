@@ -1,0 +1,24 @@
+// ===============================================
+// FILTRATION BUTTON  
+// ===============================================
+
+.filter-btn {
+  padding: $spacing-xs 16px;
+  border: 2px solid $border-light;
+  background: $bg-white;
+  border-radius: $border-radius-xl;
+  cursor: pointer;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-normal;
+  @include transition();
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  &--active {
+    background: $primary-color;
+    color: $text-white;
+    border-color: $primary-color;
+  }
+}

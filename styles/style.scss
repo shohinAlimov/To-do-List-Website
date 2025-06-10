@@ -1,0 +1,23 @@
+// ===============================================
+// MAIN STYLE.SCSS - IMPORT ALL PARTIAL FILES
+// ===============================================
+
+// -- GLOBAL STYLES: -- //
+@import "./scss/global/variables";
+@import "./scss/global/reset";
+@import "./scss/global/mixins";
+@import "./scss/global/hidden";
+@import "./scss/global/container";
+@import "./scss/global/responsive";
+
+// -- BLOCKS -- //
+@import "./scss/blocks/header";
+@import "./scss/blocks/add-task";
+@import "./scss/blocks/controls";
+@import "./scss/blocks/stats";
+@import "./scss/blocks/task-list";
+@import "./scss/blocks/task-item";
+@import "./scss/blocks/empty-state";
+@import "./scss/blocks/filter-btn";
+@import "./scss/blocks/sort-select";
+@import "./scss/blocks/animations";

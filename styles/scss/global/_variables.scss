@@ -1,0 +1,71 @@
+// ===============================================
+// VARIABLES
+// ===============================================
+
+// Colors
+$primary-color: #667eea;
+$primary-hover: #5a6fd8;
+$secondary-color: #764ba2;
+
+// Button Colors
+$warning-color: #ffc107;
+$warning-hover: #e0a800;
+$danger-color: #dc3545;
+$danger-hover: #c82333;
+$success-color: #28a745;
+$success-hover: #218838;
+$gray-color: #6c757d;
+$gray-hover: #5a6268;
+
+// Text Colors
+$text-primary: #333;
+$text-secondary: #666;
+$text-muted: #888;
+$text-white: white;
+
+// Background Colors
+$bg-white: white;
+$bg-hover: #f8f9fa;
+$bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+// Border Colors
+$border-light: #e1e5e9;
+$border-lighter: #f0f0f0;
+
+// Spacing
+$spacing-xs: 8px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 30px;
+$spacing-xxl: 60px;
+
+// Border Radius
+$border-radius-sm: 4px;
+$border-radius: 6px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 20px;
+
+// Font Sizes
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 1.1rem;
+$font-size-xl: 1.5rem;
+$font-size-xxl: 2rem;
+$font-size-xxxl: 2.5rem;
+$font-size-huge: 4rem;
+
+// Font Weights
+$font-weight-normal: 500;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+
+// Box Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-text: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+// Breakpoints
+$mobile: 768px;

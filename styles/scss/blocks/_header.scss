@@ -1,0 +1,21 @@
+// ===============================================
+// HEADER SECTION
+// ===============================================
+
+.header {
+  @include text-center;
+  margin-bottom: $spacing-xl;
+  color: $text-white;
+
+  &__title {
+    font-size: $font-size-xxxl;
+    font-weight: $font-weight-bold;
+    margin-bottom: $spacing-sm;
+    text-shadow: $shadow-text;
+  }
+
+  &__subtitle {
+    font-size: $font-size-lg;
+    opacity: 0.9;
+  }
+}

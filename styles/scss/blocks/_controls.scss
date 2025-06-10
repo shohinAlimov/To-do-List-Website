@@ -1,0 +1,16 @@
+// ===============================================
+// CONTROLS SECTION
+// ===============================================
+
+.controls {
+  @include flex-between;
+  margin-bottom: $spacing-lg;
+  @include card-style;
+  padding: $spacing-md $spacing-lg;
+
+  &__filters {
+    display: flex;
+    gap: $spacing-sm;
+  }
+
+}
